@@ -11,9 +11,6 @@ const Fname = document.querySelector('#Fname'),
 
 
 
-
-
-
 // Event liteners 
 addEventListener()
 
@@ -55,9 +52,7 @@ function ValidateInput(e) {
             e.target.classList.remove('error')
         }
     }
-
     enableBtn()
-
 }
 
 function validateLength(element) {
@@ -69,7 +64,6 @@ function validateLength(element) {
         element.style.borderColor = 'green'
         element.classList.remove('error')
     }
-
 }
 
 function validateEmail(email) {
@@ -89,6 +83,7 @@ function validatePhoneNumber(phonenumber) {
         .toLowerCase()
         .search(
             /^(0|0098|\+98)9(0[1-5]|[1 3]\d|2[0-2]|98)\d{7}$/
+
         );
 
 
